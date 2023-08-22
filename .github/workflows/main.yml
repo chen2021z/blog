@@ -1,92 +1,23 @@
-# 工作流的名称，如果省略，则使用当前文件名
-name: Auto Deploy
-
-# 从工作流生成的工作流运行的名称，如果省略，则使用提交时的commit信息
-run-name: Deploy by @${{ github.actor }}
-
-# 触发部署的条件
-on:
-  # 每当 push 到 master 分支时触发部署
+name: build # 工作流name
+on: # 触发 workflow 的条件
   push:
-    branches: 
-      - master
+    branches:
+      - main
+jobs: # workflow 文件的主体，表示要执行的一项或多项任务
+  build-and-deploy: # 任务id
+    name: build-and-deploy # 任务name
+    runs-on: ubuntu-latest # 指定运行所需要的虚拟机环境 ubuntu、windows、macOS。
+    steps: # 指定每个 Job 的运行步骤，可以包含一个或多个步骤。 可以是执行某一个run 命令，或者一个action
+      - uses: actions/checkout@v3 # 拉取 github 仓库代码（action）
 
-# 当前流程要执行的任务，可以是多个。[my_first_job]就是一个任务
-jobs:
-  my_first_job:
-    # 任务的名称，不设置则默认my_first_job
-    name: build-and-deploy
+      - name: Install and Build 🔧 # 该步骤的名称
+        run: | # 该步骤运行的命令或者 action
+          npm i
+          npm run build
 
-    # 运行所需要的虚拟机环境
-    runs-on: ubuntu-latest
-
-    # 每个任务下的运行步骤，短横杠 - 表示一个步骤，从上至下依次执行。
-    steps:
-      # clone 该仓库的源码到工作流中
-      - name: Clone Code
-        uses: actions/checkout@v3
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          # "最近更新时间"等 git 日志相关信息，需要拉取全部提交记录
-          fetch-depth: 0
-
-      # 安装 Node 环境
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          # 选择要使用的 node 版本
-          node-version: '16'
-
-      # 如果你的依赖是使用npm的，用这种
-      # 缓存 npm node_modules
-      - name: Cache dependencies
-        uses: actions/cache@v3
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-npm-cache-
-
-      # 安装依赖 npm
-      - name: Install dependencies
-        # 如果没有命中缓存才执行 npm install
-        if: steps.cache-deps.outputs.cache-hit != 'true'
-        run: npm install
-
-      # 如果你的依赖是使用yarn的，用这种
-      # 缓存 yarn node_modules
-      # - name: Cache dependencies
-      #   uses: actions/cache@v3
-      #   id: yarn-cache
-      #   with:
-      #     path: |
-      #       **/node_modules
-      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-yarn-
-
-      # 安装依赖 yarn
-      # - name: Install dependencies
-      #   # 如果没有命中缓存才执行 npm install
-      #   if: steps.npm-cache.outputs.cache-hit != 'true'
-      #   run: yarn --frozen-lockfile
-
-      # 运行构建脚本
-      - name: Run Build Script
-        run: npm run build
-
-      # 部署到 GitHub Pages
-      - name: Deploy to GitHub Pages
-        # 此actions的官方文档 https://github.com/JamesIves/github-pages-deploy-action
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          # 要部署的文件夹，必填
-          FOLDER: .vuepress/dist
-          # 希望部署的分支，默认gh-pages
-          BRANCH: gh-pages
-          # # 仓库范围的访问令牌，可以将个人令牌的值存储在GitHub Secrets中
-          # # 默认情况是不需要填的，如果您需要更多权限，例如部署到另一个存储库才需要填写
-          # # ACCESS_TOKEN 对应GitHub Secrets中设置的字段，不要照搬
-          # TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          # # 部署到GitHub的不同仓库 <用户名>/<仓库名>
-          # # 此选项必须配置了TOKEN才能正常执行
-          # REPOSITORY-NAME: leoleor/leo2
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 指定密钥
+          BRANCH: page # 指定推送到的远程分支
+          FOLDER: build # 指定构建之后的产物要推送哪个目录的代码
