@@ -1,23 +1,32 @@
-name: build # 工作流name
-on: # 触发 workflow 的条件
+name: Deploy GitHub Pages
+
+# 触发条件：在 push 到 master 分支后
+on:
   push:
     branches:
       - main
-jobs: # workflow 文件的主体，表示要执行的一项或多项任务
-  build-and-deploy: # 任务id
-    name: build-and-deploy # 任务name
-    runs-on: ubuntu-latest # 指定运行所需要的虚拟机环境 ubuntu、windows、macOS。
-    steps: # 指定每个 Job 的运行步骤，可以包含一个或多个步骤。 可以是执行某一个run 命令，或者一个action
-      - uses: actions/checkout@v3 # 拉取 github 仓库代码（action）
 
-      - name: Install and Build 🔧 # 该步骤的名称
-        run: | # 该步骤运行的命令或者 action
-          npm i
-          npm run build
+# 任务
+jobs:
+  build-and-deploy:
+    # 服务器环境：最新版 Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
+      # 生成静态文件
+      - name: Build
+        run: npm install && npm run build
+
+      # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 指定密钥
-          BRANCH: page # 指定推送到的远程分支
-          FOLDER: .vuepress/dist # 指定构建之后的产物要推送哪个目录的代码
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: .vuepress/dist
+
