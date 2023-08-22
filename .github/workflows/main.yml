@@ -20,4 +20,4 @@ jobs: # workflow 文件的主体，表示要执行的一项或多项任务
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # 指定密钥
           BRANCH: page # 指定推送到的远程分支
-          FOLDER: docs/.vuepress/dist # 指定构建之后的产物要推送哪个目录的代码
+          FOLDER: .vuepress/dist # 指定构建之后的产物要推送哪个目录的代码
