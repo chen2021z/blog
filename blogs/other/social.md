@@ -1,7 +1,7 @@
 ---
-title: 个人名片
+title: 联系方式
 categories:
- - social
+ - 个人名片
 ---
 
 ### 说明

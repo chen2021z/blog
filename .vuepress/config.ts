@@ -56,7 +56,7 @@ export default defineUserConfig({
         },
         {
           text: "高阶原理",
-          children: ["browser_process_model","eventLoop"],
+          children: ["browser_process_model", "eventLoop"],
           // collapsible: true,
         },
 
@@ -86,12 +86,12 @@ export default defineUserConfig({
         ]
       },
       {
-        text: "博客分类",link:"/categories/js/1/"
+        text: "博客分类", link: "/categories/js/1/"
       },
       { text: "tag", link: "/tags/event_loop/1/" },
       {
         text: "关于我", children: [
-          { text: "github", link: "https://github.com/chen2021z/" }
+          { icon: 'LogoGithub', text: "github", link: "https://github.com/chen2021z/" }
         ]
       },
     ],
