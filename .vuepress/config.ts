@@ -46,7 +46,7 @@ export default defineUserConfig({
       "/docs/senior/": [
         {
           text: "高阶面试题",
-          children: ['algorithm','seniorQuesions'],
+          children: ['algorithm', 'seniorQuesions'],
           // collapsible: true,
         },
         {
@@ -56,7 +56,7 @@ export default defineUserConfig({
         },
         {
           text: "高阶原理",
-          children: ["eventLoop"],
+          children: ["browser_process_model","eventLoop"],
           // collapsible: true,
         },
 
@@ -76,22 +76,34 @@ export default defineUserConfig({
         ]
       },
       {
-        text: "高级进阶", 
+        text: "高级进阶",
         children: [
           { text: "算法简述", link: '/docs/senior/algorithm' },
           { text: "深广度面试题", link: '/docs/senior/seniorQuesions' },
           { text: "项目考察", link: '/docs/senior/projectInspection' },
+          { text: "浏览器进程模型", link: '/docs/senior/browser_process_model' },
           { text: "事件循环", link: '/docs/senior/eventLoop' },
         ]
       },
-      { text: "tag", link: "/tags/tag1/1/" },
-      { text: "categories", link: "/categories/categories1" },
+      {
+        text: "博客分类",link:"/categories/js/1/"
+      },
+      { text: "tag", link: "/tags/event_loop/1/" },
+      {
+        text: "关于我", children: [
+          { text: "github", link: "https://github.com/chen2021z/" }
+        ]
+      },
     ],
     bulletin: {
       body: [
         {
+          type: "title",
+          content: "欢迎来到我的博客",
+        },
+        {
           type: "text",
-          content: `🎉🎉🎉 reco 主题 2.x 已经接近 Beta 版本，在发布 Latest 版本之前不会再有大的更新，大家可以尽情尝鲜了，并且希望大家在 QQ 群和 GitHub 踊跃反馈使用体验，我会在第一时间响应。`,
+          content: `个人偏向文档方式记录所学前端知识，后续将添加更多博客文章与生活杂谈`,
           style: "font-size: 12px;",
         },
         {
@@ -99,32 +111,11 @@ export default defineUserConfig({
         },
         {
           type: "title",
-          content: "QQ 群",
+          content: "告诉你个秘密",
         },
         {
           type: "text",
-          content: `
-          <ul>
-            <li>QQ群1：1037296104</li>
-            <li>QQ群2：1061561395</li>
-            <li>QQ群3：962687802</li>
-          </ul>`,
-          style: "font-size: 12px;",
-        },
-        {
-          type: "hr",
-        },
-        {
-          type: "title",
-          content: "GitHub",
-        },
-        {
-          type: "text",
-          content: `
-          <ul>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/issues">Issues<a/></li>
-            <li><a href="https://github.com/vuepress-reco/vuepress-theme-reco-next/discussions/1">Discussions<a/></li>
-          </ul>`,
+          content: `作者不仅超帅，说话还好听( •̀ᄇ• ́)ﻭ✧<br/>想认识作者的话请用力点击下方按钮`,
           style: "font-size: 12px;",
         },
         {
@@ -134,9 +125,9 @@ export default defineUserConfig({
           type: "buttongroup",
           children: [
             {
-              text: "打赏",
-              link: "/docs/others/donate.html",
-            },
+              text: "点我",
+              link: "/blog/blogs/other/social.html",
+            }
           ],
         },
       ],

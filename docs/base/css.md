@@ -1,5 +1,5 @@
 ---
-title: CSS面试题
+title: CSS
 date: 2023/03/1
 tags:
  - css
