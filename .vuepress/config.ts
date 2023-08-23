@@ -3,7 +3,7 @@ import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
-  title: "A trusted blog",
+  title: "如约而至",
   description: "Just playing around",
   base: '/blog/',
   theme: recoTheme({
@@ -23,17 +23,14 @@ export default defineUserConfig({
         {
           text: "HTML + CSS",
           children: ["html", "css"],
-          collapsible: true,
         },
         {
           text: "JavaScript",
           children: ["js_base", "jsWebAPI", 'js_interview'],
-          collapsible: true,
         },
         {
           text: "Vue",
           children: ["Vue2", "Vue3"],
-          collapsible: true,
         },
         {
           text: "Webpack",
@@ -81,6 +78,9 @@ export default defineUserConfig({
       {
         text: "高级进阶", 
         children: [
+          { text: "算法简述", link: '/docs/senior/algorithm' },
+          { text: "深广度面试题", link: '/docs/senior/seniorQuesions' },
+          { text: "项目考察", link: '/docs/senior/projectInspection' },
           { text: "事件循环", link: '/docs/senior/eventLoop' },
         ]
       },
