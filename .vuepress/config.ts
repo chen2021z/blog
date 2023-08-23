@@ -128,10 +128,10 @@ export default defineUserConfig({
               text: "点我",
               link: "/blog/blogs/other/social.html",
             }
-          ],
-        },
-      ],
-    },
+          ]
+        }
+      ]
+    }
     // commentConfig: {
     //   type: 'valie',
     //   // options 与 1.x 的 valineConfig 配置一致
@@ -145,6 +145,6 @@ export default defineUserConfig({
     //     // hideComments: true // 隐藏评论
     //   },
     // },
-  }),
+  })
   // debug: true,
 });
