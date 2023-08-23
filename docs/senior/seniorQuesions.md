@@ -106,7 +106,7 @@ categories:
    1. DOM是一颗树，所有节点都是Node
    2. Node是Element的基类
    3. Element是其他HTML元素的基类，如HTMLDivElement
-   4. ![image-20230326171611215](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230326171611215.png)
+   4. ![image-20230326171611215](/image-20230326171611215.png)
 
 10. HTMLCollection 和 NodeList区别
 
@@ -200,7 +200,7 @@ categories:
    + 执行同步代码
    + 执行微任务（process.nextTick优先级最高）
    + 按顺序执行6个类型的宏任务（每个宏任务开始前都执行当前的微任务）
-   + <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230328155022999.png" alt="image-20230328155022999" style="zoom: 50%;" />
+   + <img src="/image-20230328155022999.png" alt="image-20230328155022999" style="zoom: 50%;" />
 
    + 与浏览器event loop 的区别：流程基本相同，nodej宏任务和微任务分类型，有优先级
 
@@ -226,7 +226,7 @@ categories:
 
        因JS无法直接调用native API，需要通过特定地格式来调用，这些格式统称为 JS-Bridge，例如 微信JSSDK
 
-       <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230328193222570.png" alt="image-20230328193222570" style="zoom:50%;" />
+       <img src="/image-20230328193222570.png" alt="image-20230328193222570" style="zoom:50%;" />
 
     2. JS Bridge地常见实现方式
 
@@ -304,7 +304,7 @@ categories:
 
    **cookie和session**：cookie：用于登录验证，存储用户标识（如userId）,session在服务端，存储用户详细信息，和cookie一一对应，cookie和session 是常见验验证解决方案
 
-   ![image-20230330172157466](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230330172157466.png)
+   ![image-20230330172157466](/image-20230330172157466.png)
 
    **token vs cookie**
 
@@ -349,7 +349,7 @@ categories:
 
    HTTP在应用层，TCP UDP在传输层
 
-   <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331154410169.png" alt="image-20230331154410169" style="zoom:50%;" />
+   <img src="/image-20230331154410169.png" alt="image-20230331154410169" style="zoom:50%;" />
 
    TCP 稳定连接、可靠传输；UDP 无连接、无断开、不稳定但效率高，适用于视频会议、语音通话
 
@@ -369,15 +369,15 @@ categories:
 
    HTTPS 加密传输 HTTP + TLS/SSL
 
-   ![image-20230331205500720](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331205500720.png)
+   ![image-20230331205500720](/image-20230331205500720.png)
 
-    <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331212814029.png" alt="image-20230331212814029" style="zoom: 67%;" /> 
+    <img src="/image-20230331212814029.png" alt="image-20230331212814029" style="zoom: 67%;" /> 
 
 8. < script>的defer 和 async 属性 
 
-​	![image-20230331213555836](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331213555836.png)
+​	![image-20230331213555836](/image-20230331213555836.png)
 
-![image-20230331214248444](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331214248444.png)
+![image-20230331214248444](/image-20230331214248444.png)
 
 9. prefetch 和 dns-prefetch 有什么区别？
 
@@ -388,16 +388,13 @@ categories:
    + prefetch 资源在未来页面使用，空闲时加载
 
    + preload  资源在当前页面使用，会优先加载
-
-   <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331214822569.png" alt="image-20230331214822569" style="zoom:50%; float:left" />
+![image-20230331214248444](/image-20230331214822569.png)
 
 ​		dns-prefetch 和 preconnect
-
 ​		dns-prefetch 即 DNS 预查询
-
 ​		preconnect 即 DNS 预连接
+![image-20230331214248444](/image-20230331215742513.png)
 
-<img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331215742513.png" alt="image-20230331215742513" style="zoom: 33%; float:left" />
 
  答案：
 
@@ -405,12 +402,12 @@ prefetch 是资源预获取（和preload相关）
 
 dns-prefetch 是DNS 预查询（和preconnect相关）
 
-10. 前端攻击有哪些？改如何预防？
+1.  前端攻击有哪些？改如何预防？
 
     + XSS （cross site script）跨站脚本攻击
 
       手段：黑客将JS代码插入到网页内容，渲染时执行JS ，比如传递cookie
-
+      
       预防：替换特殊字符；vue和react是默认屏蔽xss攻击，除非vue使用v-html指令
 
     + CSRF（cross site request forgery）跨站请求伪造 
@@ -426,7 +423,7 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       预防：让iframe 不能跨域加载：X-Frame-Options: sameorigin 
 
-      ![image-20230331223837647](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230331223837647.png)
+      ![image-20230331223837647](/image-20230331223837647.png)
 
     + DDos
 
@@ -442,7 +439,7 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       预防：处理输入的内容，替换特殊字符
 
-11. WebSocket 
+2.  WebSocket 
 
     + 支持端对端通讯，可以有client发起，也可以由server发起
 
@@ -452,7 +449,7 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       先发起HTTP请求，成功之后再升级到WebSocket协议，再通讯
 
-    + <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230401215925077.png" alt="image-20230401215925077" style="zoom: 80%;" />
+    + <img src="/image-20230401215925077.png" alt="image-20230401215925077" style="zoom: 80%;" />
 
     + 与HTTP的区别：
 
@@ -464,7 +461,7 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       实际项目推荐socket.io, API更简洁
 
-      <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230401220413323.png" alt="image-20230401220413323" style="zoom:50%;" />
+      <img src="/image-20230401220413323.png" alt="image-20230401220413323" style="zoom:50%;" />
 
     + 和HTTP 长轮询的区别
 
@@ -472,9 +469,9 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       WebSocket：客户端可发起请求，服务端也可发起请求
 
-      <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230401223519176.png" alt="image-20230401223519176" style="zoom:50%;" />
+      <img src="/image-20230401223519176.png" alt="image-20230401223519176" style="zoom:50%;" />
 
-12. url 到页面
+3.  url 到页面
 
     分为三大部分：网络请求；解析；渲染 
 
@@ -484,7 +481,7 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       HTML 构建DOM树；CSS 构建CSSOM树（style tree）；两者结合形成render tree
 
-      ![image-20230402150741836](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230402150741836.png)
+      ![image-20230402150741836](/image-20230402150741836.png)
 
       解析过程很复杂：css可能来自style link；js可能内嵌、外链还有defer async；
 
@@ -494,7 +491,7 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
       计算各个DOM的尺寸、定位，最后绘制页面；遇到js可能会执行（参考defer async）；异步css 图片加载，可能会触发重新渲染
 
-13. 重绘 repaint 和 重排 reflow 有什么区别？
+4.  重绘 repaint 和 重排 reflow 有什么区别？
 
     动态网页，随时都会重排重绘，例如动画、弹出、显隐切换等； 
 
@@ -506,11 +503,11 @@ dns-prefetch 是DNS 预查询（和preconnect相关）
 
     减少重排的方法：集中修改样式，或直接切换class，修改之前设置display：none，脱离文档流；使用BFC特性，不影响其他元素位置 ；频繁触发使用节流和防抖；使用createDocumentFragment批量操作DOM；优化动画，使用CSS和requestAnimationFrame
 
-14. 网页和ifreme如何通讯？
+5.  网页和ifreme如何通讯？
 
     答案：使用postMessage发送，使用message事件监听；需要注意跨域的限制和判断
 
-15. new 一个对象发生了什么？
+6.  new 一个对象发生了什么？
 
     ```js
     function Foo(name){

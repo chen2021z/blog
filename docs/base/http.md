@@ -91,7 +91,7 @@ RestfulAPI设计：把每个url当作一个**唯一的资源**，如 GET /api/li
 
 ### 强制缓存
 
-<img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230308202952000.png" alt="image-20230308202952000" style="zoom: 40%;" /><img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230308203629776.png" alt="image-20230308203629776" style="zoom: 40%;" />
+<img src="/image-20230308202952000.png" alt="image-20230308202952000" style="zoom: 40%;" /><img src="/image-20230308203629776.png" alt="image-20230308203629776" style="zoom: 40%;" />
 
 + Cache-Control
 
@@ -105,13 +105,13 @@ RestfulAPI设计：把每个url当作一个**唯一的资源**，如 GET /api/li
 
 + 服务端缓存策略，服务端判断客户端能不能用缓存的内容 
 + 一致则返回304，否则返回200和最新资源
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230308205237336.png" alt="image-20230308205237336" style="zoom:50%;" />
++ <img src="\image-20230308205237336.png" alt="image-20230308205237336" style="zoom:50%;" />
 + 资源标识
   + Respons e Headers中，有两种：Last-Modified资源最后修改时间，Etag资源的唯一标识（优先使用）
-  + <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230308205759837.png" alt="image-20230308205759837" style="zoom:50%;" />
+  + <img src="\image-20230308205759837.png" alt="image-20230308205759837" style="zoom:50%;" />
 
 
-<img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230308210958512.png" alt="image-20230308210958512" style="zoom: 80%;" />
+<img src="\image-20230308210958512.png" alt="image-20230308210958512" style="zoom: 80%;" />
 
 
 

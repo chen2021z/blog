@@ -173,7 +173,7 @@ categories:
 
    1. 新的 `defineAsyncComponent` 助手方法，用于显式地定义异步组件
    2. `component` 选项被重命名为 `loader`
-   3. ![image-20230318160356272](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230318160356272.png)
+   3. ![image-20230318160356272](/image-20230318160356272.png)
 
 9. 新增组件：Teleport、Suspense
 
@@ -308,7 +308,7 @@ function ref(value) {
   + 模板编译时，动态节点做标记
   + 标记分为不同的类型，如 text props class等
   + 目的： diff算法时，可以区分静态节点，以及不同类型的动态节点，优化diff算法
-  + <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230318200206827.png" alt="image-20230318200206827" style="zoom:67%; float:left" />
+  + <img src="/image-20230318200206827.png" alt="image-20230318200206827" style="zoom:67%; float:left" />
 + hoistStatic 
   + 将静态节点的定义  提升到父作用域，缓存起来
   + 多个相邻的静态节点，会被合并起来

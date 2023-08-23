@@ -256,7 +256,7 @@ Student.prototype
 xialuo.__proto__ === Student.prototype
 ```
 
-![image-20230304222045940](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230304222045940.png)
+![image-20230304222045940](/image-20230304222045940.png)
 
 + 原型关系
   + 每个class都有显示原型 prototype
@@ -272,7 +272,7 @@ xialuo.__proto__ === Student.prototype
 People.prototype === Student.prototype.__proto__
 ```
 
-![image-20230304222451585](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230304222451585.png)
+![image-20230304222451585](/image-20230304222451585.png)
 
 ```js
 xiaoluo.hasOwnProperty('name') //true
@@ -281,7 +281,7 @@ xiaoluo.hasOwnProperty('eat') //fslae
 xiaoluo.hasOwnProperty('hasOwnProperty') //false
 ```
 
-![image-20230304223309260](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230304223309260.png)
+![image-20230304223309260](/image-20230304223309260.png)
 
 + 提示
   + class是ES6语法规范，有ECMA委员会发布
@@ -339,7 +339,7 @@ class SurperJQuery extends JQuery{
 
 ### 作用域和自由变量
 
-![](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230305151824521.png)
+![](/image-20230305151824521.png)
 
 + 作用域
 
@@ -349,7 +349,7 @@ class SurperJQuery extends JQuery{
 
   + 块级作用域（es6新增）  if/for/while...中的{}
 
-    ![image-20230305152220350](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230305152220350.png)
+    ![image-20230305152220350](/image-20230305152220350.png)
 
 + 自由变量
 
@@ -494,7 +494,7 @@ this取什么样的值是在**函数执行的时候**确定的，不是在定义
 
 
 
-![image-20230329221501655](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230329221501655.png)
+![image-20230329221501655](/image-20230329221501655.png)
 
 ## 异步  
 

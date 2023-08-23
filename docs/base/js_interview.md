@@ -177,7 +177,7 @@ console.log(isEqual(obj1, obj2));
 
     2. **Ajax 是一个技术统称，是一个概念模型，它囊括了很多技术，并不特指某一技术，它很重要的特性之一就是让页面实现局部刷新。** ajax可以通过XMLHtttpRequest或Fetch实现
 
-    3. <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230311161854148.png" alt="image-20230311161854148" style="zoom:50%;" />
+    3. <img src="/image-20230311161854148.png" alt="image-20230311161854148" style="zoom:50%;" />
 
 17. document load和ready的区别？
 

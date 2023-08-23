@@ -163,7 +163,7 @@ categories:
   + 代码体积更小
   + 创建函数作用域更少
   + 代码可读性更好
-  + <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230320131122988.png" alt="image-20230320131122988" style="zoom:50%; float:left"  />
+  + <img src="/image-20230320131122988.png" alt="image-20230320131122988" style="zoom:50%; float:left"  />
 
  
 
@@ -311,7 +311,7 @@ module.exports = TestPlugin;
 
 ### 如何产出一个lib
 
-<img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230320153854122.png" alt="image-20230320153854122" style="zoom:50%; float:left" />
+<img src="/image-20230320153854122.png" alt="image-20230320153854122" style="zoom:50%; float:left" />
 
 ### webpack如何实现懒加载
 

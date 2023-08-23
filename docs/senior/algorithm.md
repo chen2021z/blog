@@ -44,7 +44,7 @@ categories:
 
 + 物理上是多叉树，但逻辑上是二叉树
 + 一般用于高效IO，关系型数据库常用B树来组织数据
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230322222643691.png" alt="image-20230322222643691" style="zoom:50%; float:left" />
++ <img src="/image-20230322222643691.png" alt="image-20230322222643691" style="zoom:50%; float:left" />
 
 
 
@@ -55,19 +55,19 @@ categories:
 ## 堆栈模型
 
 + JS代码执行时，值类型变量，存储在栈；引用类型，存储在堆
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323141710124.png" alt="image-20230323141710124" style="zoom:50%; float:left" />
++ <img src="/image-20230323141710124.png" alt="image-20230323141710124" style="zoom:50%; float:left" />
 
 
 
 ### 堆
 
 + 完全二叉树
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323142239710.png" alt="image-20230323142239710" style="zoom: 50%; float:left" />
++ <img src="/image-20230323142239710.png" alt="image-20230323142239710" style="zoom: 50%; float:left" />
 + 最大堆：父节点 >= 子节点
 + 最小堆：父节点 <= 子节点
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323142358470.png" alt="image-20230323142358470" style="zoom:50%; float:left" />
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323142533818.png" alt="image-20230323142533818" style="zoom:50%; float:left" />
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323143051327.png" alt="image-20230323143051327" style="zoom:50%; float:left" />
++ <img src="/image-20230323142358470.png" alt="image-20230323142358470" style="zoom:50%; float:left" />
++ <img src="/image-20230323142533818.png" alt="image-20230323142533818" style="zoom:50%; float:left" />
++ <img src="/image-20230323143051327.png" alt="image-20230323143051327" style="zoom:50%; float:left" />
 + 使用场景：
   + 堆栈模型
   + 堆的数据，都是在栈中引用，不需要从root遍历
@@ -93,6 +93,6 @@ categories:
 + 只移动0，其他顺序不变
 + 必须再原数组操作
 
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323152525393.png" alt="image-20230323152525393" style="zoom:50%; float: left" />
++ <img src="/image-20230323152525393.png" alt="image-20230323152525393" style="zoom:50%; float: left" />
 
-+ <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230323152626422.png" alt="image-20230323152626422" style="zoom:50%; float: left" />
++ <img src="/image-20230323152626422.png" alt="image-20230323152626422" style="zoom:50%; float: left" />

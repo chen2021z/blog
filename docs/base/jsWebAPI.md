@@ -36,11 +36,11 @@ DOM的本质是从HTML文件解析出来的一棵树
 
 + 对DOM查询做缓存
 
-  <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230307145954596.png" alt="image-20230307145954596" style="zoom: 50%;" />
+  <img src="/image-20230307145954596.png" alt="image-20230307145954596" style="zoom: 50%;" />
 
 + 将频繁操作改为一次性操作
 
-  <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230307150011474.png" alt="image-20230307150011474" style="zoom: 67%;" />
+  <img src="/image-20230307150011474.png" alt="image-20230307150011474" style="zoom: 67%;" />
 
 ## BOM
 
@@ -291,7 +291,7 @@ ajax(url).then((res) => {
   + 当客户端关闭会话，或者 Session 超时失效时会话结束。
   + **缺点**：比如 A 服务器存储了 Session，就是做了负载均衡后，假如一段时间内 A 的访问量激增，会转发到 B 进行访问，但是 B 服务器并没有存储 A 的 Session，会导致 Session 的失效。
 
-​	<img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230307213217391.png" alt="image-20230307213217391" style="zoom: 80%;" />
+​	<img src="/image-20230307213217391.png" alt="image-20230307213217391" style="zoom: 80%;" />
 
 ### Session Cookies的认证流程
 

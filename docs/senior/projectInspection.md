@@ -53,7 +53,7 @@ categories:
 
    全局唯一的实例（无法产生第二个），如 Vuex Redux的store
 
-   <img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230402211711176.png" alt="image-20230402211711176"  />
+   <img src="/image-20230402211711176.png" alt="image-20230402211711176"  />
 
    js是单线程的，创建单例很简单，但java是支持多线程的，多线程共享进程内存，创建单例需要考虑锁死线程
 
@@ -97,7 +97,7 @@ categories:
 
 因此，观察者模式强调的是主题和观察者之间的直接交互，而发布订阅模式强调的是发布者和订阅者之间的间接交互。此外，观察者模式中的观察者是知道主题的存在和状态的，而发布订阅模式中的订阅者只知道消息代理的存在，而不知道发布者的存在。
 
-![image-20230402213710023](C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230402213710023.png)
+![image-20230402213710023](/image-20230402213710023.png)
 
 
 
