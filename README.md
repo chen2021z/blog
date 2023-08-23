@@ -4,7 +4,7 @@ modules:
   - BannerBrand
   - Blog
   # - MdContent
-  - Footer
+  # - Footer
 bannerBrand:
   bgImage: '/bg.svg'
   title: 如约而至
@@ -23,3 +23,4 @@ actionText: About
 actionLink: /views/other/about
 ---
 
+12312

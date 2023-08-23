@@ -3,42 +3,89 @@ import type { DefaultThemeOptions } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
-  title: "vuepress-theme-reco",
+  title: "A trusted blog",
   description: "Just playing around",
-  base:'/blog/',
+  base: '/blog/',
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
-    author: "reco_luan",
+    author: "chen",
     authorAvatar: "/head.png",
-    docsRepo: "https://github.com/vuepress-reco/vuepress-theme-reco-next",
+    docsRepo: "https://github.com/chen2021z/blog",
     docsBranch: "main",
-    docsDir: "example",
+    docsDir: "docs",
     lastUpdatedText: "",
+    // 自动设置分类
+    // autoSetSeries: true,
     // series 为原 sidebar
     series: {
-      "/docs/theme-reco/": [
+      "/docs/base/": [
         {
-          text: "module one",
-          children: ["home", "theme"],
+          text: "HTML + CSS",
+          children: ["html", "css"],
+          collapsible: true,
         },
         {
-          text: "module two",
-          children: ["api", "plugin"],
+          text: "JavaScript",
+          children: ["js_base", "jsWebAPI", 'js_interview'],
+          collapsible: true,
         },
+        {
+          text: "Vue",
+          children: ["Vue2", "Vue3"],
+          collapsible: true,
+        },
+        {
+          text: "Webpack",
+          children: ["webpack"],
+          collapsible: true,
+        },
+        {
+          text: "HTTP",
+          children: ["http"],
+          collapsible: true,
+        }
       ],
+      "/docs/senior/": [
+        {
+          text: "高阶面试题",
+          children: ['algorithm','seniorQuesions'],
+          // collapsible: true,
+        },
+        {
+          text: "项目考察",
+          children: ["projectInspection"],
+          // collapsible: true,
+        },
+        {
+          text: "高阶原理",
+          children: ["eventLoop"],
+          // collapsible: true,
+        },
+
+      ]
     },
     navbar: [
       { text: "首页", link: "/" },
-      { text: "标签分类", link: "/categories/" },
-      { text: "Tags", link: "/tags/tag1/1/" },
       {
-        text: "Docs",
+        text: "知识记录", link: "/categories/",
         children: [
-          { text: "vuepress-reco", link: "/docs/theme-reco/theme" },
-          { text: "vuepress-theme-reco", link: "/blogs/other/guide" },
-        ],
+          { text: "html", link: '/docs/base/html' },
+          { text: "css", link: '/docs/base/css' },
+          { text: "JavaScript", link: '/docs/base/js_base' },
+          { text: "Vue", link: '/docs/base/Vue2' },
+          { text: "Webpack", link: '/docs/base/webpack' },
+          { text: "Http", link: '/docs/base/http' },
+        ]
       },
+      {
+        text: "高级进阶", 
+        children: [
+          { text: "事件循环", link: '/docs/senior/eventLoop' },
+        ]
+      },
+      { text: "tag", link: "/tags/tag1/1/" },
+      { text: "categories", link: "/categories/categories1" },
     ],
     bulletin: {
       body: [
