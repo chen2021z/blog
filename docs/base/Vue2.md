@@ -76,7 +76,7 @@ categories:
 
   beforeDestroy：解除绑定，销毁子组件及监听器
 
-<img src="C:\Users\cz\AppData\Roaming\Typora\typora-user-images\image-20230313150105981.png" alt="image-20230313150105981" style="zoom:80%;" />
+<img src="typora-user-images\image-20230313150105981.png" alt="image-20230313150105981" style="zoom:80%;" />
 
 ### 生命周期（父子组件）
 
