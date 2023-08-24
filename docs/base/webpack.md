@@ -1,10 +1,10 @@
 ---
-title: webpack
+title: webpack面试题
 date: 2023/03/19
 tags:
- - Webpack
+ - 面试题
 categories:
- - 面试题  
+ - webpack  
 ---
 
 前言：成熟的工具，重点在于配置和使用，原理并不高优；webpack5主要是内部效率的优化，配置上没有太多改动

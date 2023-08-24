@@ -6,6 +6,7 @@ export default defineUserConfig({
   title: "如约而至",
   description: "Just playing around",
   base: '/blog/',
+  head: [['link', { rel: 'icon', href: '/logo.png' }]],
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
@@ -30,12 +31,11 @@ export default defineUserConfig({
         },
         {
           text: "Vue",
-          children: ["Vue2", "Vue3"],
+          children: ["vue_cli","vue3_start","Vue2", "Vue3"],
         },
         {
           text: "Webpack",
-          children: ["webpack"],
-          collapsible: true,
+          children: ["webpack_loader","webpack_plugin","webpack"],
         },
         {
           text: "HTTP",
@@ -70,7 +70,7 @@ export default defineUserConfig({
           { text: "html", link: '/docs/base/html' },
           { text: "css", link: '/docs/base/css' },
           { text: "JavaScript", link: '/docs/base/js_base' },
-          { text: "Vue", link: '/docs/base/Vue2' },
+          { text: "Vue", link: '/docs/base/vue_cli' },
           { text: "Webpack", link: '/docs/base/webpack' },
           { text: "Http", link: '/docs/base/http' },
         ]
@@ -86,7 +86,7 @@ export default defineUserConfig({
         ]
       },
       {
-        text: "博客分类", link: "/categories/js/1/"
+        text: "Category", link: "/categories/js/1/"
       },
       { text: "tag", link: "/tags/event_loop/1/" },
       {
