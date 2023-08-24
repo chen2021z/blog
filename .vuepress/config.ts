@@ -71,7 +71,7 @@ export default defineUserConfig({
           { text: "css", link: '/docs/base/css' },
           { text: "JavaScript", link: '/docs/base/js_base' },
           { text: "Vue", link: '/docs/base/vue_cli' },
-          { text: "Webpack", link: '/docs/base/webpack' },
+          { text: "Webpack", link: '/docs/base/webpack_loader' },
           { text: "Http", link: '/docs/base/http' },
         ]
       },
