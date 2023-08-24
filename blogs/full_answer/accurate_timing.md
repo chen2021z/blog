@@ -1,6 +1,6 @@
 ---
 title: JS 中的计时器能做到精确计时吗？不能！
-date: 2023/5/21
+date: 2023/8/21
 tags:
  - 精确计时
 categories:
