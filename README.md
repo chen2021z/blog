@@ -13,8 +13,8 @@ bannerBrand:
   buttons:
     - { text: Category, link: '/blog/categories/js/1/' }
     - { text: Tag, link: '/blog/tags/event_loop/1/', type: 'plain' }
-blog:
-  socialLinks:
-    - { icon: 'LogoGithub', link: 'https://github.com/chen2021z' }
+# blog:
+#   socialLinks:
+#     - { icon: 'LogoGithub', link: 'https://github.com/chen2021z' }
 
 ---

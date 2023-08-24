@@ -4,14 +4,14 @@ import recoTheme from "vuepress-theme-reco";
 
 export default defineUserConfig({
   title: "如约而至",
-  description: "Just playing around",
+  description: "个人前端博客，欢迎来玩！",
   base: '/blog/',
   head: [['link', { rel: 'icon', href: '/logo.png' }]],
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
     author: "chen",
-    authorAvatar: "/head.png",
+    authorAvatar: "/githubLOGO.jpg",
     docsRepo: "https://github.com/chen2021z/blog",
     docsBranch: "main",
     docsDir: "docs",
