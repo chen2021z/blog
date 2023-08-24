@@ -1,0 +1,1 @@
+const t=JSON.parse('{"key":"v-78f714fe","path":"/tags/Thousands-Format/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{t as data};
