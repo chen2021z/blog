@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-fa5f5f68","path":"/tags/weiqianduan/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{a as data};

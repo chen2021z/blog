@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f3e4948c","path":"/categories/flex/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{e as data};
