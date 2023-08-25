@@ -86,7 +86,7 @@ export default defineUserConfig({
         ]
       },
       {
-        text: "Category", link: "/categories/js/1/"
+        text: "Category", link: "/categories/suanfa/1/"
       },
       { text: "tag", link: "/tags/event_loop/1/" },
       {
