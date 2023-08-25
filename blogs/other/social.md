@@ -7,10 +7,8 @@ categories:
 
 ### 说明
 
-<hr />
-
 ::: tip
-作者使用的是是一款完全免费的开源 `vuepress` 主题`vuepress-theme-reco`。
+作者使用的是一款完全免费的开源 `vuepress` 主题`vuepress-theme-reco`@2x beta版。
 
 如果针对文档内容想与作者探讨，可通过下方二维码联系作者(^▽^)
 :::
