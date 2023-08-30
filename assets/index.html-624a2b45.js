@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-24c92911","path":"/tags/IntersectionObserver/1/","title":"","lang":"en-US","frontmatter":{"layout":"Categories"},"headers":[],"git":{},"filePathRelative":null}');export{e as data};
