@@ -82,7 +82,7 @@ export default defineUserConfig({
           { text: "深广度面试题", link: '/docs/senior/seniorQuesions' },
           { text: "项目考察", link: '/docs/senior/projectInspection' },
           { text: "浏览器进程模型", link: '/docs/senior/browser_process_model' },
-          { text: "事件循环", link: '/docs/senior/eventLoop' },
+          { text: "渲染主线程", link: '/docs/senior/eventLoop' },
           { text: "页面渲染流程", link: '/blogs/full_answer/render_page.html' },
         ]
       },
